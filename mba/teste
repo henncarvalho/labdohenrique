@@ -10,4 +10,11 @@ def create_dataframe():
         'E': np.random.randint(1, 100, size=100)
     }
     df = pd.DataFrame(data)
-    return df
+    return df 
+# Novo código para plotar o gráfico
+df = create_dataframe()
+df.plot()
+plt.title("Gráfico das colunas A, B, C, D, E")
+plt.xlabel("Índice")
+plt.ylabel("Valor")
+plt.show()
